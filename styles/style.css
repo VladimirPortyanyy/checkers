@@ -1,0 +1,118 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.board {
+	margin: 0 auto;
+	position: relative;
+	width: 820px;
+	height: 820px;
+	background-color: #FFFFFF;
+    border: 10px solid black;
+}
+
+.line-1,
+.line-2,
+.line-3,
+.line-4,
+.line-5,
+.line-6,
+.line-7,
+.line-8 {
+  position: absolute;
+  left: 0px;
+  width: 800px;
+  height: 100px;
+}
+.line-1 {
+  top: 0px;
+}
+.line-2 {
+  top: 100px;
+}
+.line-3 {
+  top: 200px;
+}
+.line-4 {
+  top: 300px;
+}
+.line-5 {
+  top: 400px;
+}
+.line-6 {
+  top: 500px;
+}
+.line-7 {
+  top: 600px;
+}
+.line-8 {
+  top: 700px;
+}
+.cell{
+  position: absolute;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+.cell:nth-child(1) {
+  left: 0px;
+}
+.cell:nth-child(2) {
+  left: 100px;
+}
+.cell:nth-child(3) {
+  left: 200px;
+}
+.cell:nth-child(4) {
+  left: 300px;
+}
+.cell:nth-child(5) {
+  left: 400px;
+}
+.cell:nth-child(6) {
+  left: 500px;
+}
+.cell:nth-child(7) {
+  left: 600px;
+}
+.cell:nth-child(8) {
+  left: 700px;
+}
+
+.line-1 .cell:nth-child(odd),
+.line-3 .cell:nth-child(odd),
+.line-5 .cell:nth-child(odd),
+.line-7 .cell:nth-child(odd) {
+  background-color: black
+}
+
+.line-2 .cell:nth-child(even),
+.line-4 .cell:nth-child(even),
+.line-6 .cell:nth-child(even),
+.line-8 .cell:nth-child(even){
+  background-color: #000000
+}
+
+.checkers {
+    border-radius: 50%;
+    position: absolute;
+  	top: 10px;
+  	left: 10px;
+ 	width: 80px;
+ 	height: 80px;
+ }
+
+.red {
+	background-color: red;
+}
+
+.brown {
+	background-color: saddlebrown;
+}
+
+
